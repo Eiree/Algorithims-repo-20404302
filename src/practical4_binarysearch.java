@@ -61,11 +61,11 @@ public class practical4_binarysearch{
         }
         int middle = low+((high-low) / 2);
         if (array[middle].compareTo(elem) < 0){
-            return binarySearchRecursive(array, elem, middle + 1, high, comparator);
+            return binarySearchRecursive(array, elem, middle + 1, high, comparator); //recursive call if compare < 0
         } else if (array[middle].compareTo(elem) > 0){
-            return binarySearchRecursive(array, elem, low, middle-1, comparator);
+            return binarySearchRecursive(array, elem, low, middle-1, comparator); // > 0
         } else {
-            return middle;
+            return middle; //index
         }
     }
 
@@ -109,6 +109,7 @@ public class practical4_binarysearch{
         for (int i = 0; i < SIZE * 2; i++){
             System.out.println("Found " + i + " at " + binarySearchRecursive(x,1, 0, SIZE-1, 0));
         }*/
+
 
     }
 }

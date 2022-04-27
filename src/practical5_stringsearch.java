@@ -65,7 +65,7 @@ public class practical5_stringsearch {
         int i = 1;
         lps[0] = 0;
         while (i < M){
-            if (pat.charAt(i) == pat.charAt(len)){
+            if (pat.charAt(i) == pat.charAt(len)){ //compares chars
                 len++;
                 lps[i] = len;
                 i++;

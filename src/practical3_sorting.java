@@ -86,10 +86,10 @@ public class practical3_sorting {
      * @param comparator Comparator variable.
      */
     public static <T extends Comparable<T>> void bubbleSort(final List<T> list, final Comparator<T> comparator) {
-        for (int i = 0; i < list.size(); i++){
-            for (int j = 0; j < list.size() - 1; j++){
-                if (list.get(j).compareTo(list.get(j+1)) > 0){
-                    Collections.swap(list, j, j+1);
+        for (int i = 0; i < list.size(); i++){ //loop for list size
+            for (int j = 0; j < list.size() - 1; j++){ //nested loop
+                if (list.get(j).compareTo(list.get(j+1)) > 0){ //compare list element to j+1
+                    Collections.swap(list, j, j+1); //swap using collections lib
                 }
             }
         }
@@ -98,7 +98,7 @@ public class practical3_sorting {
     public static <T extends Comparable<T>> void bubbleSort(final T[] array, final Comparator<T> comparator) {
         int length = array.length;
         T temp;
-        for (int i = 0; i < length-1; i++){
+        for (int i = 0; i < length-1; i++){ //loop for length -1
             for (int j = 0; j < length-i-1; j++){
                 if ( array[j].compareTo(array[j+1]) > 0){ //swap J+1 with J
                     swap(array, j, j+1);
@@ -175,7 +175,7 @@ public class practical3_sorting {
     public static <T extends Comparable<T>> void mergeHelperArray(T[] array, T[] l, T[] u, int left, int right, Comparator<T> comparator){
         int i = 0, j = 0, x = 0;
         while(i < left && j < right){
-            if (comparator.compare(l[i], u[j]) <= 0){
+            if (comparator.compare(l[i], u[j]) <= 0){ //compare results in 1 or 0
                 array[x++] = l[i++];
             } else {
                 array[x++] = u[j++];
@@ -307,7 +307,7 @@ public class practical3_sorting {
 
     public static <T extends Comparable<T>> void quickHelper(T[] array, int lower, int upper, Comparator<T> comparator){
         if (lower < upper){
-            int pi = pi(array, lower, upper, comparator);
+            int pi = pi(array, lower, upper, comparator); //recursive calls for helper
             quickHelper(array, lower, pi-1, comparator);
             quickHelper(array, pi + 1, upper, comparator);
         }
