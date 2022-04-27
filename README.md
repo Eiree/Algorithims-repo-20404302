@@ -4,13 +4,15 @@ Ronan O'Brien 20404302
 
 
 **Practical 3: (practical3_sorting)**
-	-Bogosort(list/array)
+
+
+	Bogosort(list/array)
 		-Time Complexity; 
 			-Best: O(n)
 			-Average: O((n+1)!)
 			-Worst: Unbounded
 		-Space Complexity: O(1)
-    
+		
 	-Bubblesort(list/array)
 		-Time Complexity; 
 			-Best: O(n)
@@ -40,7 +42,8 @@ Ronan O'Brien 20404302
 		-Space Complexity: O(1)
     
 **Practical 4: (practical4_binarysearch)**
-Binary Search;
+
+
 	-binarySearch(array)
 		-Time Complexity;
 			-Best: O(1)
@@ -64,7 +67,8 @@ Binary Search;
 
     
 **Practical 5: (practical5_stringsearch)**
-String Search;
+
+
 	-stringSearch(Brute-Force)
 		-Time Complexity; 
 			-Best: O(M) //M being total number of comparisons
