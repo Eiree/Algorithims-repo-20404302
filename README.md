@@ -12,6 +12,8 @@ Ronan O'Brien 20404302
 			-Average: O((n+1)!)
 			-Worst: Unbounded
 		-Space Complexity: O(1)
+Bogosort randomly generates permutations of the input and checks to see if the list is sorted. 
+
 		
 	-Bubblesort(list/array)
 		-Time Complexity; 
@@ -19,6 +21,7 @@ Ronan O'Brien 20404302
 			-Average: O(n^2)
 			-Worst: O(n^2)
 		-Space Complexity: O(1)
+Bubble sort is a simple sorting algorithm that repeatedly steps through an array/list to be sorted.
     
 	-selectionSort(list/array)
 		-Time Complexity; 
@@ -26,13 +29,17 @@ Ronan O'Brien 20404302
 			-Average:  O(n^2)
 			-Worst: O(n^2)
 		-Space Complexity: O(1)
+Selection sort is an in-place comparison sort. Selection sort divides the input list into two parts.. the main list and the sublist. These lists are iterated and swapped until the element is in the correct place.
     
 	-mergeSort(list/array)
 		-Time Complexity; 
 			-Best: O(n)
 			-Average: O(n log(n))
 			-Worst: O(n log(n))
-		-Space Complexity: 
+		-Space Complexity: O(1)
+Merge sort is efficient comparison-based sorting algorithm. It uses a divide and conquer approach. It divides the list into sublists that contain 1 element until there is 1 sublist left.
+
+
     
 	-quickSort(list/array)
 		-Time Complexity; 
@@ -40,6 +47,8 @@ Ronan O'Brien 20404302
 			-Average: O(n log(n))
 			-Worst: O(n^2)
 		-Space Complexity: O(1)
+Quicksort uses a systematic method of placing elements into an array in order. It is a comparison sort, thus it can sort items of any type with a "less-than" relationship.
+
     
 **Practical 4: (practical4_binarysearch)**
 
